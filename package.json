@@ -1,0 +1,24 @@
+{
+  "name": "bl4-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that pings a server when a new Shift Code is added to: https://www.ign.com/wikis/borderlands-4/Borderlands_4_SHiFT_Codes",
+  "main": "mainBot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Byrdhouse-Development/BL4-Discord-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Byrdhouse-Development/BL4-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/Byrdhouse-Development/BL4-Discord-Bot#readme",
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.3"
+  }
+}

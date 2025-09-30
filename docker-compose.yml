@@ -1,19 +1,19 @@
 version: '3.8'
 
 services:
-discord-monitor:
-# Build the image using the Dockerfile located in the current directory
-build: .01
-# Name the container for easier management
-container_name: BL4-Discord-Bot
-# Map the environment variables from your local .env file into the container
-env_file:
-- .env
-# Restart the bot if it crashes, unless explicitly stopped (important for stability)
-restart: always
-# Optional: If you want to see the logs in real-time
-logging:
-driver: "json-file"
-options:
-max-size: "10m"
-max-file: "5"
+    discord-bot:
+        # Build the image using the Dockerfile located in the current directory
+        build: .
+        # Name the container for easier management
+        container_name: BL4-Discord-Bot
+        # Map the environment variables from your local .env file into the container
+        env_file:
+            - .env
+        # Restart the bot if it crashes, unless explicitly stopped (important for stability)
+        restart: always
+        # Optional: If you want to see the logs in real-time
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "10m"
+                max-file: "5"
